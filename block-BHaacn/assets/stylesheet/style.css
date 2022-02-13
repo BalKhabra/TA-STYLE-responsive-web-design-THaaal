@@ -1,0 +1,522 @@
+
+   
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+ }
+.clearfix::after {
+    clear: both;
+}
+/* Flex */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.flex-btw {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 70px;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+/* HEADER */
+.header {
+    background-image: linear-gradient(to right, rgba(64, 51, 182, 0.842), #362ea8d8), url(../banner.png);
+    width: 100%;
+    background-repeat: no-repeat;
+}
+h1 {
+    color: white;
+    font-size: 30px;
+}
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.btn {
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #ED3A4B;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    border-radius: 4px;
+}
+.article-heading {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.article-text, .about-text {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.hero-img {
+    width: 100%;
+}
+.year {
+    color: #ED3A4B;
+}
+.btn-register {
+    text-decoration: none;
+    padding: 15px 30px;
+}
+/* ABOUT */
+.about-img {
+    margin: 100px;
+}
+.about-header {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.about-text {
+    color: grey;
+}
+.btn-know {
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #ED3A4B;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+/* JOIN */
+.join-section {
+    background-color: #DFECFD;
+    padding: 60px 20px 20px 20px;
+}
+.join-box {
+    border: 2px dashed #ED3A4B;
+    width: 300px;
+    height: 145px;
+    padding: 20px;
+    margin: 20px;
+    position: static;
+}
+.join-heading {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.join-text {
+    font-size: 12px;
+}
+h6 {
+    font-size: 30px;
+    color: #ED3A4B;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 300px;
+    margin-bottom: -32px;
+    background-color: #DFECFD;
+}
+/* SCHEDULE */
+.schedule-bg {
+    padding: 50px 20px;
+}
+.circle {
+    background-color: #ED3A4B;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+.line-connector {
+    width: 50px;
+    height: 60px;
+    border-right: 2px dashed #ED3A4B;
+}
+.dotted-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px dashed #ED3A4B;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ED3A4B;
+    line-height: 1;
+}
+.schedule-img {
+    width: 140px;
+    height: 100px;
+    border-radius: 8px;
+    margin: 25px;
+}
+.schedule-text {
+    margin-bottom: 75px;
+    color: grey;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.right-aside {
+    margin-left: 30px;
+    margin-top: 90px;
+    margin-right: 120px;
+}
+.btn-download {
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #ED3A4B;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+/* Number */
+.number {
+    text-align: center;
+}
+.number-column {
+    background-color: #DFECFD;
+}
+.number-text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.red-box{
+    background-color: #ED3A4B;
+    width: 220px;
+    height: 160px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+.icons {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.number-squares {
+    margin: 50px;
+}
+/* VIDEO */
+.video {
+    background-image: url(../banner.png);
+    height: 450px;
+    margin: 30px;
+    border-radius: 12px;
+}
+.circle-play {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+}
+.play {
+    color: #ED3A4B;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+/* NEWS */
+.news-img {
+    width: 300px;
+    height: 200px;
+}
+.news-background {
+    background-color: #DFECFD;
+    padding: 40px;
+}
+.read-text {
+    color: #102169;
+    font-weight: bold;
+}
+.news-heading {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.dummy-text {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #6a6a6b;
+    margin-right: 20px;
+}
+/* First footer */
+.last-sect {
+    background-color: #23347B;
+    padding: 20px 20px;
+}
+.alt-logo {
+    padding-left: 60px;
+}
+.middle-text {
+    padding-right: 10px;
+}
+.last-text {
+    padding-right: 300px;
+}
+.nav-footer a {
+    color: #BCC0D2;
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer {
+    background-color: #102169;
+    padding: 20px;
+}
+.footer-heading {
+    color: white;
+    margin-bottom: 20px;
+}
+small {
+    color: #6C759A;
+}
+.sm-icons a {
+    color: #BCC0D2;
+    padding: 10px;
+}
+.bars {
+    display: none;
+}
+#toggle {
+    display: none;
+}
+/* SMALL SCREEN */
+@media screen and (max-width: 768px) {
+    .flex, .flex-btw {
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+    }
+    .order {
+            order: 1;
+    }
+    .article-text, .article-heading, .about-header, .about-text, .news-block {
+        text-align: center;
+    }
+    .news-img {
+        margin-top: 20px;
+    }
+    .last-text {
+        padding-right: 0;
+    }
+    .alt-logo {
+        padding-left: 0;
+    }
+    .container {
+        margin: 0;
+    }
+    .right-aside {
+        margin: 0;
+    }
+    .schedule-sect {
+        flex-wrap: nowrap;
+    }
+    .join-heading {
+        font-size: 15px;
+    }
+    .schedule-text {
+        font-size: 15px;
+        margin-bottom: 30px
+    }
+    .btn-register {
+        margin-left: 200px;
+    }
+    .article-text {
+        margin-left: 60px;
+    }
+    .article-heading {
+        margin-left: 60px;
+        margin-top: 80px;
+    }
+    .btn-know {
+        margin-left: 290px;
+    }
+    .nav li {
+        margin: 16px 0;
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #23347B;
+        padding-top: 120px;
+    }
+    .column {
+        flex-direction: column;
+    }
+    #toggle {
+        display: none;
+    }
+    #toggle:checked ~ .nav {
+        display: inline-block;
+    }
+    .bars {
+        font-size: 24px;
+        color: white;
+        position: relative;
+        z-index: 99;
+        display: inline-block;
+    }
+}
